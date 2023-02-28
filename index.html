@@ -4,37 +4,37 @@
         <meta charset="utf-8"/>
         <title>Zone Running | Blog Running</title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
-        <link rel="icon" type="image/png" href="pics/runFav.png"
+        <link rel="icon" type="image/png" href="pics/runFav.png"/>
     </head>
     <body>
 
         <!-- Zone du titre et du petit message -->
         <header>
-            <h1>Zone Running</h1>
-            <h3>Merci d'avoir pris le temps de nous aider à améliorer la plateforme</h3>
+            <h1 id="title">Zone Running</h1>
+            <p id="description">Merci d'avoir pris le temps de nous aider à améliorer la plateforme</p>
         </header>
 
         <!-- Zone qui contient le formulaire -->
         <div id="contener">
             
-            <form action="traitement.php" method="post">
+            <form action="traitement.php" method="post" id="survey-form">
                 <p><!-- Demande d'information sur l'utilisateur -->
                     <h2>Formulaire</h2>
-                    <label>Nom</label>
-                    <input type="text" name="prenom" placeholder="Jean" required>
+                    <label id="name-label">Nom</label>
+                    <input type="text" name="prenom" placeholder="Jean" required id="name">
                     <label>Prénom</label>
                     <input type="text" name="nom" placeholder="Neymar" required>
-                    <label>Age</label>
-                    <input type="number" name="age" placeholder="51" max="12" min="120" required>
+                    <label id="number-label">Age</label>
+                    <input type="number" name="age" placeholder="51" max="12" min="120" required id="number">
                     <label>Tel</label>
                     <input type="tel" name="tel" placeholder="0606060606" maxlength="10">
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="monadresse@mail.com" required>
+                    <label id="email-label">Email</label>
+                    <input type="email" name="email" placeholder="monadresse@mail.com" required id="email">
                 </p>
                     
                 <p><!-- List des marques de sport  -->
                     <label>Quel est votre marques de sport préférée</label>
-                    <select name="marque">
+                    <select name="marque" id="dropdown">
                         <optgroup label="Spécialiste">
                             <option value="saucony">Saucony</option>
                             <option value="salomon">Salomon</option>
@@ -68,16 +68,16 @@
                    
                 <p><!--Liste Checkbox -->
                     <label>Quel est votre type de course préféré</label>
-                        <input type="checkbox" name="trail">
-                            <label for="trail">Trail</label>
-                        <input type="checkbox" name="ultratrail">
-                            <label for="uiltratrail">Ultra-Trail</label>
-                        <input type="checkbox" name="10km">
-                            <label for="10km">10km</label>
-                        <input type="checkbox" name="semi">
-                            <label for="semi">Semi-Marathon</label>
-                        <input type="checkbox" name="trail">
-                            <label for="trail">Trail</label>
+                    <input type="checkbox" name="trail" value="trail">
+                         <label for="trail">Trail</label>   
+                    <input type="checkbox" name="ultratrail" value="trail">    
+                        <label for="uiltratrail">Ultra-Trail</label>
+                    <input type="checkbox" name="10km" value="trail">    
+                        <label for="10km">10km</label>    
+                    <input type="checkbox" name="semi" value="trail">    
+                        <label for="semi">Semi-Marathon</label>    
+                    <input type="checkbox" name="trail" value="trail">    
+                        <label for="trail">Trail</label>            
                 </p>
                 
                 <p> <!-- Zone de rédaction -->
@@ -86,8 +86,8 @@
                 </p>
                 
                 <p> <!-- Bouton d'envoi et de RAZ -->
-                   <input type="submit" value="Envoi du formulaire"/>
-                   <input type="reset"  value="Réinitialiser le formulaire"
+                   <input id="submit" type="submit" value="Envoi du formulaire"/>
+                   <input type="reset"  value="Réinitialiser le formulaire"/>
                 </p>
             </form>
 
@@ -117,7 +117,5 @@
                 </div>
             </footer>
         </div>
-
-        
     </body>
 </html>
