@@ -1,0 +1,45 @@
+body {
+    box-sizing: border-box;
+    background-color: #16161A;
+}
+
+#contener{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-color: #D9D9D9;
+    opacity: 80%;
+    border-radius: 30px;
+}
+
+header {
+    color: #D9D9D9;
+    text-align: center;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+header #description {
+
+}
+
+
+
+#contener{
+    border: red 1px solid;
+}
+
+header{
+    border: red 1px solid;
+}
+
+footer{
+    border: red 1px solid;
+}
+
+
+
+
+
