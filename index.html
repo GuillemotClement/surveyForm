@@ -7,6 +7,96 @@
         <link rel="icon" type="image/png" href="pics/runFav.png"
     </head>
     <body>
+
+        <!-- Zone du titre et du petit message -->
+        <header>
+            <h1>Zone Running</h1>
+            <h3>Merci d'avoir pris le temps de nous aider à améliorer la plateforme</h3>
+        </header>
+
+        <!-- Zone qui contient le formulaire -->
+        <div id="contener">
+            
+            <form action="traitement.php" method="post">
+                <p><!-- Demande d'information sur l'utilisateur -->
+                    <h2>Formulaire</h2>
+                    <label>Nom</label>
+                    <input type="text" name="prenom" placeholder="Jean" required>
+                    <label>Prénom</label>
+                    <input type="text" name="nom" placeholder="Neymar" required>
+                    <label>Age</label>
+                    <input type="number" name="age" placeholder="51" max="12" min="120" required>
+                    <label>Tel</label>
+                    <input type="tel" name="tel" placeholder="0606060606" maxlength="10">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="monadresse@mail.com" required>
+                </p>
+                    
+                <p><!-- List des marques de sport  -->
+                    <label>Quel est votre marques de sport préférée</label>
+                    <select name="marque">
+                        <optgroup label="Spécialiste">
+                            <option value="saucony">Saucony</option>
+                            <option value="salomon">Salomon</option>
+                            <option value="hoka">Hoka</option>
+                        </optgroup>
+                        <optgroup label="Général">
+                            <option value="adidas">Adidas</option>
+                            <option value="nike">Nike</option>
+                            <option value="oasics">Oasics</option>
+                        </optgroup>
+                    </select>
+                </p>
+                    
+                <p> <!-- Liste radio -->
+                    <label>Quel fréquence de course à pied par semaine :</label>
+                        <input type="radio" name="frequence" value="0-1">
+                            <label for="0-1">0-1</label>
+                        <input type="radio" name="frequence" value="2">
+                            <label for="2">2 fois par semaine</label>
+                        <input type="radio" name="frequence" value="3">
+                            <label for="3">3 fois par semaine</label>
+                        <input type="radio" name="frequence" value="4">
+                            <label for="4">4 fois par semaine</label>
+                        <input type="radio" name="frequence" value="5">
+                            <label for="5">5 fois par semaine</label>
+                        <input type="radio" name="frequence" value="6">
+                            <label for="6">6 fois par semaine</label>
+                        <input type="radio" name="frequence" value="7">
+                            <label for="7">7 fois par semaine. Tu es un grand malade.</label>
+                </p>
+                   
+                <p><!--Liste Checkbox -->
+                    <label>Quel est votre type de course préféré</label>
+                        <input type="checkbox" name="trail">
+                            <label for="trail">Trail</label>
+                        <input type="checkbox" name="ultratrail">
+                            <label for="uiltratrail">Ultra-Trail</label>
+                        <input type="checkbox" name="10km">
+                            <label for="10km">10km</label>
+                        <input type="checkbox" name="semi">
+                            <label for="semi">Semi-Marathon</label>
+                        <input type="checkbox" name="trail">
+                            <label for="trail">Trail</label>
+                </p>
+                
+                <p> <!-- Zone de rédaction -->
+                    <label>Une question, une idée d'amélioration c'est par ici :</label>
+                    <textarea name="remarque" rows="5" cols="50" placeholder="J'ai trouvé un idée génial pour le site ..., J'ai une question en rapport avec la VMA .."></textarea>
+                </p>
+                
+                <p> <!-- Bouton d'envoi et de RAZ -->
+                   <input type="submit" value="Envoi du formulaire"/>
+                   <input type="reset"  value="Réinitialiser le formulaire"
+                </p>
+            </form>
+
+            <footer>
+                <h3>Adresse</h3>
+                <p>28 rue du runner</        
+            </footer>
+        </div>
+
         
     </body>
 </html>
