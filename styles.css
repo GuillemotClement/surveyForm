@@ -47,18 +47,37 @@ header {
 
 /* DESIGN DU CONTAINER PRINCIPAL */
 #contener{
-    width: 60%;
-    height: 80%;
+    width: 40%;
+    height: 90%;
     margin: auto;
-    display: flex;
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
     opacity: 70%;
     border-radius: 30px;
 }
+form h2 {
+    text-align: center;
+    color: var(--couleurText);
+    font-family: var(--fontTitle);
+}
+#data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: red 1px solid;
+    
+}
 
-
-
-
+#data label{
+    color: red;
+    text-align: left;
+    width: 60%;
+    font-size: 0.9em;
+}
+#data input{
+    width: 60%;
+    
+}
 
 #contener{
     border: red 1px solid;
